@@ -4,19 +4,23 @@ layout: compress
 
 <!DOCTYPE html>
 <html>
-{% include head.html %}
-
-<body>
-  <div class="intro-text" id="intro-text">
-	<h2>INTRO TEXT AWESOMENESS</h2>
-	<h2>Made Possible With</h2>
-	<h2>CSS ANIMATION</h2>
-	<h2>& A TINY BIT OF</h2>
-	<h2>JAVASCRIPT</h2>
-	<h2>TO INITIATE THE</h2>
-	<h2>jQuery LETTERING.js PLUGIN</h2>
-	<h2>REFRESH TO SEE IT AGAIN...</h2>
-</div>
+<% 6.times do |i| %>
+  <div class="spider_<%= i %>">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <% 4.times do %>
+      <span class="leg left"></span>
+    <% end %>
+    <% 4.times do %>
+      <span class="leg right"></span>
+    <% end %>
+  </div>
+<% end %>
+<h1>
+  Happy Halloween!
+</h1>
+<img class="web-right" src="http://www.scandiafun.com/images/spiderweb-corner-right.png"/>
+<img class="web-left" src="http://www.scandiafun.com/images/spiderweb-corner-right.png"/>
 </body>
 
 </html>
