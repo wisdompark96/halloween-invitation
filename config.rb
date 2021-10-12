@@ -1,6 +1,6 @@
 preferred_syntax = :scss
-http_patch = '/assets'
-css_dir = 'css'
+http_patch = '/'
+css_dir = '/assets/css'
 sass_dir = 'css'
 images_dir = 'images'
 javascripts_dir = 'js'
