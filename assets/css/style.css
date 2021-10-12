@@ -215,6 +215,18 @@ h1 {
   animation: flicker 4s 0s infinite;
 }
 
+
+h3 {
+  position: absolute;
+  left: 6%;
+  font-family: "Eater", cursive;
+  font-size: 8.5vw;
+  color: #111111;
+  -moz-animation: flicker 4s 0s infinite;
+  -webkit-animation: flicker 4s 0s infinite;
+  animation: flicker 4s 0s infinite;
+}
+
 .web-right {
   position: absolute;
   height: 200px;
