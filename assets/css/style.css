@@ -207,7 +207,7 @@ body {
 h1 {
   position: static;
   left: 6%;
-  bottom: 12%
+  bottom: 12%;
   font-family: "Eater", cursive;
   font-size: 8.5vw;
   color: #111111;
@@ -232,7 +232,7 @@ h4 {
   position: static;
   left: 6%;
   font-family: "Eater", cursive;
-  font-size: 8.5vw;
+  font-size: 2.5vw;
   color: #01fadd;
 }
 .web-right {
