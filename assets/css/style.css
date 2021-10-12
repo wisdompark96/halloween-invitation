@@ -236,8 +236,8 @@ h4 {
 }
 
 content {
-  position static;
-  top: 50%
+  position: absolute;
+  bottom: 16%
 }
 .web-right {
   position: absolute;
