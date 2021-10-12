@@ -222,9 +222,9 @@ h3 {
   font-family: "Eater", cursive;
   font-size: 8.5vw;
   color: #111111;
-  -moz-animation: flicker 4s 0s infinite;
-  -webkit-animation: flicker 4s 0s infinite;
-  animation: flicker 4s 0s infinite;
+  -moz-animation: h3flicker 4s 0s infinite;
+  -webkit-animation: h3flicker 4s 0s infinite;
+  animation: h3flicker 4s 0s infinite;
 }
 
 .web-right {
@@ -310,6 +310,70 @@ h3 {
   100% {
     text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
     color: #fa6701;
+  }
+}
+
+@-moz-keyframes h3flicker {
+  0%,
+	6%,
+	12% {
+    text-shadow: none;
+    color: #111111;
+  }
+  3%,
+	9% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
+    color: #d001fa;
+  }
+  60% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #d001fa;
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #d001fa;
+  }
+}
+@-webkit-keyframes h3flicker {
+  0%,
+	6%,
+	12% {
+    text-shadow: none;
+    color: #111111;
+  }
+  3%,
+	9% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
+    color: #d001fa;
+  }
+  60% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #d001fa;
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #d001fa;
+  }
+}
+@keyframes h3flicker {
+  0%,
+	6%,
+	12% {
+    text-shadow: none;
+    color: #111111;
+  }
+  3%,
+	9% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
+    color: #d001fa;
+  }
+  60% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #d001fa;
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #d001fa;
   }
 }
 @-moz-keyframes legs-wriggle-left {
