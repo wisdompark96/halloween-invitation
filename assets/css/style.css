@@ -207,7 +207,6 @@ body {
 h1 {
   position: static;
   left: 6%;
-  bottom: 12%;
   font-family: "Eater", cursive;
   font-size: 8.5vw;
   color: #111111;
@@ -221,7 +220,7 @@ h3 {
   position: static;
   left: 6%;
   font-family: "Eater", cursive;
-  font-size: 8.5vw;
+  font-size: 4.5vw;
   color: #111111;
   -moz-animation: h3flicker 4s 0s infinite;
   -webkit-animation: h3flicker 4s 0s infinite;
