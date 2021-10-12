@@ -234,6 +234,11 @@ h4 {
   font-size: 2.5vw;
   color: #01fadd;
 }
+
+content {
+  position static;
+  top: 30%
+}
 .web-right {
   position: absolute;
   height: 200px;
