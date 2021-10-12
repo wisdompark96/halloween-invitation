@@ -8,83 +8,23 @@ layout: compress
 {% include head.html %}
 
 <body>
-    <div class='spider_0'>
-  <div class='eye left'></div>
-  <div class='eye right'></div>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-</div>
-<div class='spider_1'>
-  <div class='eye left'></div>
-  <div class='eye right'></div>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-</div>
-<div class='spider_2'>
-  <div class='eye left'></div>
-  <div class='eye right'></div>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-</div>
-<div class='spider_3'>
-  <div class='eye left'></div>
-  <div class='eye right'></div>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-</div>
-<div class='spider_4'>
-  <div class='eye left'></div>
-  <div class='eye right'></div>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-</div>
-<div class='spider_5'>
-  <div class='eye left'></div>
-  <div class='eye right'></div>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg left'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-  <span class='leg right'></span>
-</div>
-<h1>
-  Happy Halloween!
-</h1>
-<img class='web-right' src='http://www.scandiafun.com/images/spiderweb-corner-right.png'>
-<img class='web-left' src='http://www.scandiafun.com/images/spiderweb-corner-right.png'>
+   <section class="hero is-fullheight" id="blog">
+        <div class="hero-body">
+            <div class="container">
+                {% include blogpage-heading.html %}
+            </div>
+        </div>
+        <div id="results-container"></div>
+        <!--Blog Cards Section-->
+        {% for post in site.posts %}
+            {% include blog-card.html %}
+        {% endfor %}
+        </div>
+    </section>
+    <br>
+    <!--Footer begins here-->
+    {% include footer.html %}
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
 
 </body>
 
