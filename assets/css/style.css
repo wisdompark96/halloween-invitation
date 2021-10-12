@@ -228,6 +228,13 @@ h3 {
   animation: h3flicker 4s 0s infinite;
 }
 
+h4 {
+  position: absolute;
+  left: 6%;
+  font-family: "Eater", cursive;
+  font-size: 8.5vw;
+  color: #01fadd;
+}
 .web-right {
   position: absolute;
   height: 200px;
