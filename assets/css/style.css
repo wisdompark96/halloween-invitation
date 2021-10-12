@@ -231,11 +231,11 @@ h4 {
   position: static;
   left: 6%;
   font-family: "Eater", cursive;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   color: #01fadd;
 }
 
-content {
+.content {
   position: absolute;
   bottom: 16%
 }
