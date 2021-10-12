@@ -4,37 +4,29 @@ layout: compress
 
 <!DOCTYPE html>
 <html>
-{% include head.html %}
 
 <body>
-  {% include navbar.html %}
-  {% include showcase.html %}
-  {% include about.html %}
-  {% include contact.html %}
-  <!--Footer begins here-->
-  {% include footer.html %}
+  <div id="wrap">
+  <form class="signup">
+    <input class="email" maxlength="22" minlength="4" placeholder="email" type="email">/</input>
+    <input class="submit" type="submit" value="Subscribe">/</input>
+    <div class="field">
+      <p class="text initial" data-splitting="chars">email</p>
+      <div class="graves">
+        <div class="ghost">
+          <div class="ghostbody"></div>
+        </div>
+        <% 2.times do %>
+          <div class="grave"></div>
+        <% end %>
+      </div>
+      <div class="inner"></div>
+      <div class="btn">
+        <span>SUBSCRIBE</span>
+      </div>
+    </div>
+  </form>
+</div>
 </body>
-<script>
-  window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    var item = document.getElementsByClassName('navbar-item');
-    /* console.log(scroll); */
-    if (scroll < 565) {
-      item[1].classList.add('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.remove('is-active');
-    }
-    if (scroll > 565 && scroll < 1130) {
-      item[1].classList.remove('is-active');
-      item[2].classList.add('is-active');
-      item[3].classList.remove('is-active');
-    }
-    if (scroll > 1130) {
-      item[1].classList.remove('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.add('is-active');
-    }
-  });
-</script>
 
 </html>
