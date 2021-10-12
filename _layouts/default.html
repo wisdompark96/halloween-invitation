@@ -4,7 +4,25 @@ layout: compress
 
 <!DOCTYPE html>
 <html>
-  <h1> test </h1>
+  {% include head.html %}
+
+<% 6.times do |i| %>
+  <div class="spider_<%= i %>">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <% 4.times do %>
+      <span class="leg left"></span>
+    <% end %>
+    <% 4.times do %>
+      <span class="leg right"></span>
+    <% end %>
+  </div>
+<% end %>
+<h1>
+  Happy Halloween!
+</h1>
+<img class="web-right" src="http://www.scandiafun.com/images/spiderweb-corner-right.png"/>
+<img class="web-left" src="http://www.scandiafun.com/images/spiderweb-corner-right.png"/>
 </body>
 
 </html>
